@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.lichun.androidstudy.model.HomeFuncModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{model.onItemClick}"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_func_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            app:src="@{model.image}" />
+
+        <TextView
+            android:id="@+id/home_func_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:text="@{model.title}"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+</layout>

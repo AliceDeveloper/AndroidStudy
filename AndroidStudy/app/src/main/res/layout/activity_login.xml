@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:stretchColumns="0,3"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_account"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/login_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_account_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="16"
+                android:minWidth="150dp"
+                android:textSize="15sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_pwd"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_pwd_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="6"
+                android:minWidth="150dp"
+                android:textSize="15sp" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView />
+
+            <Button
+                android:id="@+id/login_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="@string/login_login_btn"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+</FrameLayout>
