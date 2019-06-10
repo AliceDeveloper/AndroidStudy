@@ -15,10 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity
-            android:name=".Home"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
     </application>
 
 </manifest>

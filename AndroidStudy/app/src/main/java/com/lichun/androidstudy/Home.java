@@ -38,13 +38,13 @@ public class Home extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         homeView = LayoutInflater.from(getContext()).inflate(R.layout.activity_home, null);
+        initData();
         return homeView;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initData();
         initView();
     }
 
@@ -63,10 +63,6 @@ public class Home extends Fragment {
         hospitalModels.add(new HomeHospitalModel(R.mipmap.home_yy1));
         hospitalModels.add(new HomeHospitalModel(R.mipmap.home_yy2));
 
-        doctorModels.add(new HomeDoctorModel(R.mipmap.home_yygh, "周丽丽", "主任医生", "擅长：血液疾病诊治，尤其在缺铁性贫性贫病，血液疾病诊治，尤其在缺铁性贫性贫病", "四川省人民医院", "1234"));
-        doctorModels.add(new HomeDoctorModel(R.mipmap.home_yygh, "周丽丽", "主任医生", "擅长：血液疾病诊治，尤其在缺铁性贫性贫病，血液疾病诊治，尤其在缺铁性贫性贫病", "四川省人民医院", "1234"));
-        doctorModels.add(new HomeDoctorModel(R.mipmap.home_yygh, "周丽丽", "主任医生", "擅长：血液疾病诊治，尤其在缺铁性贫性贫病，血液疾病诊治，尤其在缺铁性贫性贫病", "四川省人民医院", "1234"));
-        doctorModels.add(new HomeDoctorModel(R.mipmap.home_yygh, "周丽丽", "主任医生", "擅长：血液疾病诊治，尤其在缺铁性贫性贫病，血液疾病诊治，尤其在缺铁性贫性贫病", "四川省人民医院", "1234"));
         doctorModels.add(new HomeDoctorModel(R.mipmap.home_yygh, "周丽丽", "主任医生", "擅长：血液疾病诊治，尤其在缺铁性贫性贫病，血液疾病诊治，尤其在缺铁性贫性贫病", "四川省人民医院", "1234"));
     }
 
