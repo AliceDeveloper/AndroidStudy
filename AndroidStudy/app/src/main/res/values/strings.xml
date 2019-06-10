@@ -15,7 +15,4 @@
     <string name="home_rec_hospital">推荐医院</string>
     <string name="home_rec_doctor">推荐医生</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>
