@@ -8,7 +8,7 @@
             type="com.lichun.androidstudy.model.HomeHospitalModel" />
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -21,6 +21,10 @@
             android:adjustViewBounds="true"
             android:contentDescription="@string/home_rec_hospital"
             android:onClick="@{model.onItemClick}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:src="@{model.image}" />
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 </layout>
