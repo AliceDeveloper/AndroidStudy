@@ -1,84 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
-        android:stretchColumns="0,3"
-        tools:ignore="UselessParent">
+        android:background="@color/colorWhite">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/login_m_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="143dp"
+            android:text="@string/login_m_pwd"
+            android:textColor="@color/color_333333"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView />
+        <TextView
+            android:id="@+id/login_m_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:text="@string/login_m_verify"
+            android:textColor="@color/color_999999"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/login_m_pwd"
+            app:layout_constraintLeft_toRightOf="@+id/login_m_pwd"
+            app:layout_constraintTop_toTopOf="@+id/login_m_pwd" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/login_account"
-                android:textSize="15sp" />
+        <EditText
+            android:id="@+id/login_input_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginRight="23dp"
+            android:background="@null"
+            android:hint="@string/login_account_hint"
+            android:maxLength="20"
+            android:minHeight="20dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_m_pwd" />
 
-            <EditText
-                android:id="@+id/login_account"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/login_account_hint"
-                android:inputType="text"
-                android:lines="1"
-                android:maxLength="16"
-                android:minWidth="150dp"
-                android:textSize="15sp" />
+        <TextView
+            android:id="@+id/login_input_account_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_input_account" />
 
-            <TextView />
-        </TableRow>
+        <EditText
+            android:id="@+id/login_input_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="23dp"
+            android:background="@null"
+            android:hint="@string/login_pwd_hint"
+            android:maxLength="6"
+            android:minHeight="20dp"
+            android:singleLine="true"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_input_account_line" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/login_input_pwd_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="23dp"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_input_pwd" />
 
-            <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/login_forget"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_input_pwd_line" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/login_pwd"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/login_pwd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/login_pwd_hint"
-                android:inputType="text"
-                android:lines="1"
-                android:maxLength="6"
-                android:minWidth="150dp"
-                android:textSize="15sp" />
-
-            <TextView />
-        </TableRow>
-
-        <TableRow>
-
-            <TextView />
-
-            <Button
-                android:id="@+id/login_login_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_span="2"
-                android:text="@string/login_login_btn"
-                android:textSize="15sp"
-                tools:ignore="ButtonStyle" />
-
-            <TextView />
-        </TableRow>
-    </TableLayout>
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/round_btn_style"
+            android:text="@string/login_login_btn"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_input_pwd_line" />
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>

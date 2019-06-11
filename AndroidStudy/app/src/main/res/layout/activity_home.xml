@@ -90,7 +90,7 @@
                 android:id="@+id/home_line_1"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="@color/colorGreyLight" />
+                android:background="@color/color_F4F5F7" />
 
             <LinearLayout
                 android:id="@+id/home_hospital_m"
@@ -120,7 +120,7 @@
                 android:id="@+id/home_line_2"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="@color/colorGreyLight" />
+                android:background="@color/color_F4F5F7" />
 
             <LinearLayout
                 android:id="@+id/home_doctor_m"
@@ -140,13 +140,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/colorGreyLight" />
+                    android:background="@color/color_F4F5F7" />
 
                 <com.lichun.androidstudy.NoScrollListView
                     android:id="@+id/home_doctor_listView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:divider="@color/colorGreyLight"
+                    android:divider="@color/color_F4F5F7"
                     android:dividerHeight="1dp" />
             </LinearLayout>
 
@@ -154,7 +154,7 @@
                 android:id="@+id/home_line_3"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
-                android:background="@color/colorGreyLight" />
+                android:background="@color/color_F4F5F7" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

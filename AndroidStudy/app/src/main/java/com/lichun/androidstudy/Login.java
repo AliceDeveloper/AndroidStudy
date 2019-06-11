@@ -35,9 +35,9 @@ public class Login extends Fragment {
     }
 
     private void initView() {
-        EditText accountET = loginView.findViewById(R.id.login_account);
-        EditText passwordET = loginView.findViewById(R.id.login_pwd);
-        Button loginBtn = loginView.findViewById(R.id.login_login_button);
+        EditText accountET = loginView.findViewById(R.id.login_input_account);
+        EditText passwordET = loginView.findViewById(R.id.login_input_pwd);
+        Button loginBtn = loginView.findViewById(R.id.login_login_btn);
         // 监听输入变化的事件
         accountET.addTextChangedListener(new TextWatcher() {
             @Override
@@ -91,8 +91,7 @@ public class Login extends Fragment {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // this.finish();
-                // startActivity(new Intent(Login.this, Home.class));
+                Log.d(TAG, "登录成功");
             }
         });
     }

@@ -9,9 +9,13 @@
     <color name="colorBlue">#0000ff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorGreyLight">#F4F5F7</color>
+
+    <color name="color_F4F5F7">#F4F5F7</color>
+    <color name="color_EFEFEF">#EFEFEF</color>
     <color name="color_333333">#333333</color>
     <color name="color_666666">#666666</color>
     <color name="color_999999">#999999</color>
 
+    <color name="color_btn_52C469">#52C469</color>
+    <color name="color_btn_3CB963">#3CB963</color>
 </resources>
