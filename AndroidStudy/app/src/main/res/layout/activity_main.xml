@@ -12,6 +12,11 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_F4F5F7" />
+
     <RadioGroup
         android:id="@+id/tab"
         android:layout_width="match_parent"
