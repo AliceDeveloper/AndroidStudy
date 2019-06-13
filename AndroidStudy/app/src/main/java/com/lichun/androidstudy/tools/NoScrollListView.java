@@ -1,4 +1,4 @@
-package com.lichun.androidstudy;
+package com.lichun.androidstudy.tools;
 
 import android.content.Context;
 import android.util.AttributeSet;

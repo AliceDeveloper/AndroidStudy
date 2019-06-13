@@ -1,6 +1,8 @@
 package com.lichun.androidstudy;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -91,8 +93,34 @@ public class Login extends Fragment {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "登录成功");
+                loginHandler();
             }
         });
+    }
+
+    private void loginHandler() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setIcon(R.mipmap.ic_launcher);
+        builder.setTitle("系统提示");
+        builder.setMessage("选择你想进入的模块");
+        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.d(TAG, "确定");
+            }
+        });
+        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.d(TAG, "取消");
+            }
+        });
+        builder.setNeutralButton("中立", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Log.d(TAG, "中立");
+            }
+        });
+        builder.show();
     }
 }

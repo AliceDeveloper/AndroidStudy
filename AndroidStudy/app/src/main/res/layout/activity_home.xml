@@ -147,7 +147,7 @@
                     android:background="@color/color_F4F5F7"
                     app:layout_constraintTop_toBottomOf="@+id/home_doc_title" />
 
-                <com.lichun.androidstudy.NoScrollListView
+                <com.lichun.androidstudy.tools.NoScrollListView
                     android:id="@+id/home_doctor_listView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
