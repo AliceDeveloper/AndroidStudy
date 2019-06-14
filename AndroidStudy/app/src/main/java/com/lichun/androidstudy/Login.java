@@ -93,12 +93,12 @@ public class Login extends Fragment {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loginHandler();
+                login();
             }
         });
     }
 
-    private void loginHandler() {
+    private void login() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setIcon(R.mipmap.ic_launcher);
         builder.setTitle("系统提示");
